@@ -1,0 +1,22 @@
+{
+  "name": "tests_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelBalduci/Tests_Cypress.git"
+  },
+  "author": "RafaelBalduci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelBalduci/Tests_Cypress/issues"
+  },
+  "homepage": "https://github.com/RafaelBalduci/Tests_Cypress#readme",
+  "devDependencies": {
+    "cypress": "^10.3.1"
+  }
+}
