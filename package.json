@@ -18,5 +18,8 @@
   "homepage": "https://github.com/RafaelBalduci/Tests_Cypress#readme",
   "devDependencies": {
     "cypress": "^10.3.1"
+  },
+  "dependencies": {
+    "mailslurp": "^0.0.1-security"
   }
 }
