@@ -20,6 +20,8 @@
     "cypress": "^10.3.1"
   },
   "dependencies": {
-    "mailslurp": "^0.0.1-security"
+    "cypress-waitfor": "^1.1.0",
+    "mailslurp": "^0.0.1-security",
+    "mailslurp-client": "^11.3.0"
   }
 }
