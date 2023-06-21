@@ -26,41 +26,41 @@
 
 // cypress/support/commands.jsnpm i cypress-waitfor
 import "cypress-waitfor";
-const { MailSlurp } = require("mailslurp-client");
-
-const apiKey =
-  "822c4fc0a5d474a2ceb13f028408f4fb3f05983cc6c115c29495cb8e3ced6874";
-const mailslurp = new MailSlurp({ apiKey });
-Cypress.Commands.add("createInbox", () => {
-  return mailslurp.createInbox();
-});
-
-Cypress.Commands.add("waitForLatestEmail", (inboxId) => {
-  return mailslurp.waitForLatestEmail(inboxId);
-});
-
-Cypress.Commands.add("createInbox", () => {
-  // instantiate MailSlurp
-  const mailslurp = new MailSlurp({ apiKey: Cypress.env("API_KEY") });
-  // return { id, emailAddress } or a new randomly generated inbox
-  return mailslurp.createInbox();
-});
-/**
- * getAttached(selector)
- * getAttached(selectorFn)
- *
- * Waits until the selector finds an attached element, then yields it (wrapped).
- * selectorFn, if provided, is passed $(document). Don't use cy methods inside selectorFn.
- */
-Cypress.Commands.add("getAttached", (selector) => {
-  const getElement =
-    typeof selector === "function" ? selector : ($d) => $d.find(selector);
-  let $el = null;
-  return cy
-    .document()
-    .should(($d) => {
-      $el = getElement(Cypress.$($d));
-      expect(Cypress.dom.isDetached($el)).to.be.false;
-    })
-    .then(() => cy.wrap($el));
-});
+//const { MailSlurp } = require("mailslurp-client");
+//
+//const apiKey =
+//  "822c4fc0a5d474a2ceb13f028408f4fb3f05983cc6c115c29495cb8e3ced6874";
+//const mailslurp = new MailSlurp({ apiKey });
+//Cypress.Commands.add("createInbox", () => {
+//  return mailslurp.createInbox();
+//});
+//
+//Cypress.Commands.add("waitForLatestEmail", (inboxId) => {
+//  return mailslurp.waitForLatestEmail(inboxId);
+//});
+//
+//Cypress.Commands.add("createInbox", () => {
+//  // instantiate MailSlurp
+//  const mailslurp = new MailSlurp({ apiKey: Cypress.env("API_KEY") });
+//  // return { id, emailAddress } or a new randomly generated inbox
+//  return mailslurp.createInbox();
+//});
+///**
+// * getAttached(selector)
+// * getAttached(selectorFn)
+// *
+// * Waits until the selector finds an attached element, then yields it (wrapped).
+// * selectorFn, if provided, is passed $(document). Don't use cy methods inside selectorFn.
+// */
+//Cypress.Commands.add("getAttached", (selector) => {
+//  const getElement =
+//    typeof selector === "function" ? selector : ($d) => $d.find(selector);
+//  let $el = null;
+//  return cy
+//    .document()
+//    .should(($d) => {
+//      $el = getElement(Cypress.$($d));
+//      expect(Cypress.dom.isDetached($el)).to.be.false;
+//    })
+//    .then(() => cy.wrap($el));
+//});

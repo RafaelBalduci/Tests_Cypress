@@ -1,0 +1,12 @@
+export const stan_username = "standard_user";
+export const lock_username = "locked_out_user";
+export const problem_username = "problem_user";
+export const glicth_username = "performance_glitch_user";
+export const password_user = "secret_sauce";
+export const USER_FIELD = "[data-test='username']";
+export const PASS_FIELD = "[data-test='password']";
+export const ERROR_CONT = ".error-message-container";
+export const LOGIN_BTN = "[data-test='login-button']";
+export const ERROR_INFO = '[data-test="error"]';
+export const CORRECT_IMG = "#item_4_img_link > .inventory_item_img";
+export const LOGIN_SCF = ":nth-child(2) > :nth-child(1) > #inventory_container";
